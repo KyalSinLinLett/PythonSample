@@ -1,5 +1,7 @@
 #week5B
 
+
+
 with open('test.txt', 'r') as f:
 	#this reads out all the lines
 	scopeToRead = 1000
