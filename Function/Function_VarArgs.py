@@ -35,7 +35,7 @@
 
 # DOC string (Documentation string)
 
-def print_max(x, y):
+# def print_max(x, y):
 	'''1. Prints the maximum of two numbers
 The two values must be integers
 	'''
@@ -52,7 +52,7 @@ The two values must be integers
 # 		print(y, "is maximum")
 
 # print_max(5, 9)
-print(print_max.__doc__)
+# print(print_max.__doc__)
 
 # # from time import sleep
 # # print(sleep.__doc__)
@@ -62,6 +62,7 @@ print(print_max.__doc__)
 # print(time.__doc__)
 # print(random.__doc__)
 
-print(__doc__.__doc__)
+
+
 
 
