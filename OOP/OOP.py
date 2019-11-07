@@ -1,6 +1,6 @@
-#18.10.2019
+# # 18.10.2019
 
-# Classes
+# # Classes
 
 # class Person:
 # 	pass # An empty block
@@ -8,7 +8,7 @@
 # p = Person()
 # print(p)
 
-# Methods
+# # Methods
 
 # class Person:
 # 	def say_hi(self):
@@ -186,61 +186,61 @@
 # Dog.how_many()
 
 # Inheritance
-class SchoolMember:
-	"""Represents any school member"""
+# class SchoolMember:
+# 	"""Represents any school member"""
 
-	def __init__(self, name, age):
-		self.name = name
-		self.age = age
-		print("(Initialized school member: {})".format(self.name))
+# 	def __init__(self, name, age):
+# 		self.name = name
+# 		self.age = age
+# 		print("(Initialized school member: {})".format(self.name))
 
-	def tell(self):
-		"""Tell my details."""
-		print('Name: "{}", Age:"{}"'.format(self.name, self.age), end='')
+# 	def tell(self):
+# 		"""Tell my details."""
+# 		print('Name: "{}", Age:"{}"'.format(self.name, self.age), end='')
 
-class Teacher(SchoolMember):
-	'''Represents a student.'''
-	def __init__(self, name, age, marks):
-		SchoolMember.__init__(self, name, age)
-		self.marks = marks
-		print('Initialized teacher: "{}"'.format(self.name))
+# class Teacher(SchoolMember):
+# 	'''Represents a student.'''
+# 	def __init__(self, name, age, marks):
+# 		SchoolMember.__init__(self, name, age)
+# 		self.marks = marks
+# 		print('Initialized teacher: "{}"'.format(self.name))
 
-	def tell(self):
-		SchoolMember.tell(self)
-		print('Marks: "{:d}"'.format(self.marks))
+# 	def tell(self):
+# 		SchoolMember.tell(self)
+# 		print('Marks: "{:d}"'.format(self.marks))
 
-class Student(SchoolMember):
-	'''Represents a student'''
-	def __init__(self, name, age, marks, studentID):
-		SchoolMember.__init__(self, name, age)
-		self.marks = marks
-		self.studentID = studentID
-		print('(Initialized student: "{}"'.format(self.name))
+# class Student(SchoolMember):
+# 	'''Represents a student'''
+# 	def __init__(self, name, age, marks, studentID):
+# 		SchoolMember.__init__(self, name, age)
+# 		self.marks = marks
+# 		self.studentID = studentID
+# 		print('(Initialized student: "{}"'.format(self.name))
 
-	def tell(self):
-		SchoolMember.tell(self)
-		print(' Marks: "{}, StudentID: "{}""'.format(self.marks, self.studentID))
+# 	def tell(self):
+# 		SchoolMember.tell(self)
+# 		print(' Marks: "{}, StudentID: "{}""'.format(self.marks, self.studentID))
 
-class Headmaster(SchoolMember):
-	'''Represents a headmaster'''
-	def __init__(self, name, age, position):
-		SchoolMember.__init__(self, name, age)
-		self.position = position
-		print('(Initialized headmaster): "{}"'.format(self.name))
+# class Headmaster(SchoolMember):
+# 	'''Represents a headmaster'''
+# 	def __init__(self, name, age, position):
+# 		SchoolMember.__init__(self, name, age)
+# 		self.position = position
+# 		print('(Initialized headmaster): "{}"'.format(self.name))
 
-	def tell(self):
-		SchoolMember.tell(self)
-		print(' Position: {}'.format(self.position))
+# 	def tell(self):
+# 		SchoolMember.tell(self)
+# 		print(' Position: {}'.format(self.position))
 
-t = Teacher("Mrs. Shrividya", 40, 30000)
-s = Student("Swaroop", 25, 75, 'A1100')
-h = Headmaster('Mr. George', 55, 'Headmaster')
+# t = Teacher("Mrs. Shrividya", 40, 30000)
+# s = Student("Swaroop", 25, 75, 'A1100')
+# h = Headmaster('Mr. George', 55, 'Headmaster')
 
-print()
+# print()
 
-members = [t, s, h]
-for member in members:
-	member.tell()
+# members = [t, s, h]
+# for member in members:
+# 	member.tell()
 
 
 
