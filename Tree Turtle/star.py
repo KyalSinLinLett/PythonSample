@@ -1,3 +1,4 @@
+import turtle
 from turtle import *
 
 windows = turtle.Screen()
@@ -5,16 +6,25 @@ windows.bgcolor('black')
 
 color('light blue')
 
-position = pos()
+while True:
+    left(190)
+    forward(100)
+    right(75)
+    # backward(80)
+    speed(200)
+    if abs(pos()) < 1:
+        break
 
-print(position)
+setpos(150,150)
 
 while True:
-    left(145)
-    forward(100)
-    right(90)
+	right(75)
+	forward(100)
+	left(190) 
+    # backward(80)
+	speed(200)
+	if abs(pos()) < 15:
+		break
 
-    if abs(pos()) < 2:
-        break
 # end_fill()
 done()
